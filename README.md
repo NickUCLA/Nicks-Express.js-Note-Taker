@@ -84,7 +84,7 @@ git clone https://github.com/your-username/note-taker.git
 2. Navigate to the project directory:
 
 ```
-cd note-taker
+cd Nicks-Express.js-Note-Taker
 ```
 
 3. Install dependencies:
