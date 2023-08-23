@@ -1,29 +1,26 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
-// const currentNotes = require("./db/db.json");
 const { uuid } = require("uuidv4");
 
 const PORT = 3001;
 
 const app = express();
 
-// Add middleware
+// Added middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // HTML ROUTES
-// Fix index
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
-// Add notes.html
+// Add notes.html path
 app.get("/notes", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/notes.html"));
 });
-// API ROUTES
 
 // Get Route
 app.get("/api/notes", (req, res) => {
