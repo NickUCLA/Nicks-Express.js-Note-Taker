@@ -4,6 +4,8 @@
 
 The Note Taker application allows users to write, save, and manage notes. The application utilizes an Express.js back end to store and retrieve note data from a JSON file. Users can organize their thoughts, keep track of tasks, and access their notes easily through this application.
 
+![Note taker picture](images/note-taker.png)
+
 ## Table of Contents:
 
 - [User Story](#user-story)
@@ -61,17 +63,6 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 7. Click on an existing note in the left-hand column to view its content on the right-hand column.
 
 8. To create a new note, click on the "Write" icon in the navigation to clear the fields and enter new content.
-
-## Screenshots
-
-Landing Page with Link to Notes Page
-Landing Page
-
-Notes Page with Existing Notes
-Notes Page
-
-Creating and Saving a New Note
-Create and Save Note
 
 ## Installation Process
 
