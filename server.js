@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 const { uuid } = require("uuidv4");
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
@@ -17,7 +17,6 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
-// Add notes.html path
 app.get("/notes", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/notes.html"));
 });
