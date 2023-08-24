@@ -23,7 +23,6 @@ app.get("/notes", (req, res) => {
 
 // Get Route
 app.get("/api/notes", (req, res) => {
-  // res.status(200).json(currentNotes);
   let notes = JSON.parse(fs.readFileSync("./db/db.json", "utf-8"));
   res.json(notes);
 });
